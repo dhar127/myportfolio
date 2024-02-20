@@ -1,0 +1,20 @@
+.item {
+    display: inline-block; /* Display items inline */
+    margin-right: 20px; /* Add spacing between items */
+  }
+  
+  .item:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+  }
+  
+  .item img {
+    display: block; /* Ensure images are displayed as blocks */
+    margin: 0 auto; /* Center align images */
+  }
+  
+  .item a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Set link color */
+    display: block; /* Ensure links take up the entire space of their parent */
+  }
+  
