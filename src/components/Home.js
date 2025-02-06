@@ -23,7 +23,7 @@ function Home() {
                 </div>
                 <div className="des">
                     {/* 30 */}
-                    A passionate 2nd year Computer Science Student interested in mastering full stack development currently learning JavaScript and React,Data Structures and Algorithms.
+                    A passionate Computer Science Student interested in mastering full stack development currently learning JavaScript and React,Data Structures and Algorithms.
                 </div>
                 
                 <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" className='animation active'>
