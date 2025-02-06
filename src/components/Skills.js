@@ -47,7 +47,7 @@ const [listSkills] = useState([
             <div className={'item '} key={key} ref={(el) => el && divs.current.push(el)}>
               <FontAwesomeIcon icon={value.icon} />
               <h3>{ value.name }</h3>
-              <img src={value.des} height="200px" width="315px"></img>
+              <img src={value.des} height="200px" width="315px" alt=""></img>
             </div>
           ))
         }
