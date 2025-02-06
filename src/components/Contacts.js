@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef} from 'react';
 import CustomHook from './CustomHook'; // Import the custom hook with the new name
 import './Contacts.css';
 function Contacts() {
@@ -55,7 +55,7 @@ function Contacts() {
         {
           listContacts.map((value, key) => (
             <div className='item' key={key}>
-              <a href={value.value}><img src={value.title} width="50px" height="50px" href={value.title}></img></a>
+              <a href={value.value}><img src={value.title} width="50px" height="50px" href={value.title} alt=""></img></a>
               {value.title === 'Phone Number' || value.title === 'WhatsApp' || value.title === 'Instagram' ? (
                 <div>{value.value}</div>
               ):(null) }
