@@ -22,7 +22,13 @@
     "start": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+<<<<<<< HEAD
     "build": "npx update-browserslist-db@latest && react-scripts build"
+=======
+    "build": "CI=false react-scripts build"
+
+    
+>>>>>>> e9d78484d6e0af5174222462a934d93bef4c0df3
   },
   "eslintConfig": {
     "extends": [

@@ -31,17 +31,6 @@ function Contacts() {
 
   const [email, setEmail] = useState('');
 
-  const handleEmailChange = (event) => {
-    setEmail(event.target.value);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Here, you can perform any action with the email address, such as sending it to a backend server or storing it locally.
-    console.log('Email submitted:', email);
-    // Clear the input field after submission
-    setEmail('');
-  };
 
   return (
     <section className='contacts' ref={scrollTab}>
