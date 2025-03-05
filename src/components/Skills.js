@@ -66,6 +66,7 @@ function Skills() {
           <li>Invente'23 SSN Paper Presentation - 3rd Prize</li>
           <li>She Codes August Edition Winner</li>
           <li>Top 10 among 80+ teams in Techdivathon Hackathon</li>
+          <li>Healthcare IIIT Sricity Hackathon - Most promising idea  </li>
           <li className="highlight">
             Cleared Oracle Java Certification Exam
             <br />
