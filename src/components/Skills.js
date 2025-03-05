@@ -35,7 +35,6 @@ function Skills() {
   }, []);
 
   return (
-<<<<<<< HEAD
     <section className="skills" ref={scrollTab}>
       <h2 className="title">Technical Skills</h2>
       <p className="des">My proficiency in various technologies:</p>
@@ -55,22 +54,6 @@ function Skills() {
             <h3>{skill.name}</h3>
             <div className="progress-bar">
               <div className="progress" data-level={skill.level}></div>
-=======
-    <section className='skills' ref={scrollTab}>
-       <div className="title" ref={(el) => el && divs.current.push(el)}>
-        Skills & Certifications
-       </div>
-       <div className="des" ref={(el) => el && divs.current.push(el)}>
-        {/* 20 */}
-              </div>
-       <div className="list">
-        {
-          listSkills.map((value, key) => (
-            <div className={'item '} key={key} ref={(el) => el && divs.current.push(el)}>
-              <FontAwesomeIcon icon={value.icon} />
-              <h3>{ value.name }</h3>
-              <img src={value.des} height="200px" width="315px" alt=""></img>
->>>>>>> e9d78484d6e0af5174222462a934d93bef4c0df3
             </div>
           </div>
         ))}
