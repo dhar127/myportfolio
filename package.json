@@ -22,7 +22,7 @@
     "start": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-     "build": "npx update-browserslist-db@latest && react-scripts build"
+    "build": "npx update-browserslist-db@latest && react-scripts build"
   },
   "eslintConfig": {
     "extends": [
@@ -44,5 +44,9 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }

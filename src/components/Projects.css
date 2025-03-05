@@ -1,0 +1,118 @@
+/* Projects Section Styling */
+.projects {
+    padding: 60px 20px;
+    /* background: linear-gradient(135deg, rgb(43, 0, 255), #da1b60); */
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Projects List */
+  .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  /* Project Card */
+  .project-item {
+    background: linear-gradient(135deg, rgb(43, 0, 255), #da1b60);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 25px;
+    width: 320px;
+    height: 370px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+    text-align: left;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  /* Hover Effects */
+  .project-item:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Project Title */
+  .project-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  /* Description */
+  .description {
+    font-size: 1rem;
+    color: #f0f0f0;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  /* Languages Detail */
+  .languages-detail {
+    margin-bottom: 15px;
+  }
+  
+  .languages-detail h4 {
+    font-size: 1.1rem;
+    color: #ffeb3b;
+    margin-bottom: 5px;
+  }
+  
+  .languages-detail p {
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  /* GitHub Button */
+  .github-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #ff4081;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+  }
+  
+  .github-link:hover {
+    background: #d81b60;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 1024px) {
+    .projects-list {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .projects-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .project-item {
+      width: 90%;
+      height: auto;
+    }
+  }
+  

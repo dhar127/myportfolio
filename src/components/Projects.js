@@ -1,74 +1,71 @@
-import React, { useState, useRef } from 'react' 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPersonCircleQuestion, faEarthAmericas } from '@fortawesome/free-solid-svg-icons';
-import CustomHook from './CustomHook';
+import React, { useState, useRef } from "react";
+import CustomHook from "./CustomHook";
+import "./Projects.css"; // Updated CSS
 
 function Projects() {
-const [listProjects] = useState([
-  {
-    name: 'Movie recommendation System',
-    des: 'A movie recommendation application where users can delve into various movies and their trailers,and also based on ratings. ',
-    mission:'Easier analysis of different movies based on stats',
-    language: 'HTML5, CSS3, React JS, Java,SpringBoot,MongoDB',
-    images: '/project1.PNG'
-  },
-  {
-    name: 'Payroll management System',
-    des: 'EmployeePayrollSystem where salary of users added updated and deleted and final generation of payslip' ,
-   mission: 'Frontend Designing, salary analysis',
-    language: 'HTML5, CSS3, React JS, MongoDB',
-    images: '/project2.PNG'
-  },
-  {
-    name: 'Weather Application',
-    des: 'Efficient application to track the weather status', 
-      mission: 'Frond-end designing,using weather API',
-    language: 'HTML5, CSS3, React JS',
-    images: '/project3.PNG'
-  },
+  const [listProjects] = useState([
+    {
+      name: "E waste Collection and recycling app",
+      github: "https://github.com/dhar127/Ewaste_customer.git",
+      language: "Api interaction,Python, React",
+    },
+    {
+      name: "A Comprehensive Online Platform",
+      github: "https://github.com/dhar127/SeaGrow.git",
+      language: "Javascript, React",
+    },
+    {
+      name: "Movie Application System",
+      github: "https://github.com/dhar127/Movie_Application_frontend.git",
+      language: "Python, React",
+    },
+    {
+      name: "Payroll Management System",
+      github: "https://github.com/dhar127/mjit_intern.git",
+      language: "Java, Spring Boot",
+    },
+    {
+      name: "Weather Application System",
+      github: "https://github.com/dhar127/Weather_Application.git",
+      language: "JavaScript, React",
+    },
+  ]);
 
-]);
-const divs = useRef([]);
-const scrollTab = useRef();
-CustomHook(scrollTab, divs);
+  const divs = useRef([]);
+  const scrollTab = useRef();
+  CustomHook(scrollTab, divs);
+
   return (
-    <section className='projects' ref={scrollTab}>
-       <div className="title" ref={(el) => el && divs.current.push(el)}>
-        Projects
-       </div>
-       <div className="des" ref={(el) => el && divs.current.push(el)}>
-        {/* 20 */}
-               </div>
-       <div className="list">
-        {
-          listProjects.map((value, key) => (
-            <div className='item' key={key} ref={(el) => el && divs.current.push(el)}>
-              <div className="images">
-                <img src={value.images} height="600px" width="500px" alt="" />
+    <section className="projects" ref={scrollTab}>
+      <h2 className="section-title">Projects</h2>
+      <div className="projects-list">
+        {listProjects.map((project, index) => (
+          <article
+            className="project-item"
+            key={index}
+            ref={(el) => el && divs.current.push(el)}
+          >
+            <div className="project-info">
+              <h3>{project.name}</h3>
+             
+              <div className="languages-detail">
+                <h4>Languages</h4>
+                <p>{project.language}</p>
               </div>
-              <div className="content">
-                <h3>{value.name}</h3>
-                <div className="des">{value.des}</div>
-                <div className="mission">
-                    <div><FontAwesomeIcon icon={faPersonCircleQuestion} /></div>
-                    <div>
-                        <h4>Mission</h4>
-                        <div className="des">{value.mission}</div>
-                    </div>
-                </div>
-                <div className="mission">
-                    <div><FontAwesomeIcon icon={faEarthAmericas} /></div>
-                    <div>
-                        <h4>Languages</h4>
-                        <div className="des">{value.language}</div>
-                    </div>
-                </div>
-              </div>
+              <a
+                className="github-link"
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub
+              </a>
             </div>
-          ))
-        }
-       </div>
+          </article>
+        ))}
+      </div>
     </section>
-  )
+  );
 }
-export default Projects
+
+export default Projects;

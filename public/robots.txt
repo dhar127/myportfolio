@@ -1,3 +1,8 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
+n=int(input())
+while n:
+    k=int(input())
+    if k%3==1:
+        print("YES")
+    else:
+        print("NO")
+    n-=1
