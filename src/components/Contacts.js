@@ -29,9 +29,7 @@ function Contacts() {
   const scrollTab = useRef();
   CustomHook(scrollTab, divs); // Apply the custom hook with the new name
 
-  const [email, setEmail] = useState('');
-
-
+ 
   return (
     <section className='contacts' ref={scrollTab}>
       <div className="title" ref={(el) => el && divs.current.push(el)}>
